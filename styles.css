@@ -1,0 +1,156 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-description,
+.features,
+.pricing,
+.contact,
+.signup,
+.thank-you {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.product-description {
+    background-color: #f9f9f9;
+}
+
+.features {
+    background-color: #f1f1f1;
+}
+
+.pricing {
+    background-color: #e9e9e9;
+}
+
+.contact {
+    background-color: #d9d9d9;
+}
+
+.signup {
+    background-color: #ececec;
+}
+
+.thank-you {
+    background-color: #e0f7fa;
+}
+
+.tier {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.tier h3 {
+    margin-top: 0;
+}
+
+.tier .price {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#signup-form label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+#signup-form input,
+#signup-form button {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#signup-form input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#signup-form button {
+    width: auto;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.radio-group label {
+    margin-right: 1.5rem;
+}
+
+.currency-toggle,
+.subscription-toggle {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .pricing-tiers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tier {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}

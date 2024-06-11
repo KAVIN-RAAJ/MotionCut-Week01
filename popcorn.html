@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPCORN Pricing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>POPCORN</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="home" class="product-description">
+            <h2>About Us</h2>
+            <p>POPCORN is your ultimate destination for high-quality movie downloads. Whether you love classics from 20th Century Fox, the magical world of Disney, thrilling Marvel and DC movies, or engaging anime and animated films, POPCORN has something for everyone. We offer flexible subscription plans to suit your entertainment needs, ensuring you never miss out on the latest and greatest in the world of movies and series.</p>
+        </section>
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Basic Plan: Access to all 20th Century Fox movies, selected native language movies, and all AAA-rated series.</li>
+                <li>Plus Plan: All Basic Plan content, plus Disney movies, Marvel, DC, and anime rated higher than 6.0 Imdb.</li>
+                <li>Exquisite Plan: All series, movies, and anime including animated movies.</li>
+                <li>High-quality downloads in 720p, 1080p, and 4K resolution.</li>
+                <li>All movie links are licensed from respected productions</li>
+                <li>Regular updates with the latest content.(pssst :- Every sunday a random link will be free!!)</li>
+            </ul>
+        </section>
+        <section id="pricing" class="pricing">
+            <h2>Our Pricing Plans</h2>
+            <div class="currency-toggle">
+                <label for="currency">Choose your currency:</label>
+                <select id="currency">
+                    <option value="usd" data-symbol="$">USD</option>
+                    <option value="eur" data-symbol="€">EUR</option>
+                    <option value="inr" data-symbol="₹">INR</option>
+                    <option value="yen" data-symbol="¥">Yen</option>
+                </select>
+            </div>
+            <div class="subscription-toggle">
+                <label for="subscription">Choose your subscription:</label>
+                <select id="subscription">
+                    <option value="monthly">Monthly</option>
+                    <option value="six-months">6 Months</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="pricing-tiers">
+                <div class="tier" data-price-monthly-usd="9.99" data-price-six-months-usd="53.95" data-price-yearly-usd="89.91"
+                     data-price-monthly-eur="8.99" data-price-six-months-eur="48.55" data-price-yearly-eur="80.91"
+                     data-price-monthly-inr="749" data-price-six-months-inr="4044" data-price-yearly-inr="6732"
+                     data-price-monthly-yen="1100" data-price-six-months-yen="5940" data-price-yearly-yen="9900">
+                    <h3>Basic Plan</h3>
+                    <p class="price">$9.99/month</p>
+                    <button class="signup-btn" data-plan="Basic Plan">Sign Up</button>
+                </div>
+                <div class="tier" data-price-monthly-usd="24.99" data-price-six-months-usd="134.95" data-price-yearly-usd="224.91"
+                     data-price-monthly-eur="22.49" data-price-six-months-eur="121.45" data-price-yearly-eur="202.41"
+                     data-price-monthly-inr="1874" data-price-six-months-inr="10122" data-price-yearly-inr="16866"
+                     data-price-monthly-yen="2750" data-price-six-months-yen="14850" data-price-yearly-yen="24750">
+                    <h3>Plus Plan</h3>
+                    <p class="price">$24.99/month</p>
+                    <button class="signup-btn" data-plan="Plus Plan">Sign Up</button>
+                </div>
+                <div class="tier" data-price-monthly-usd="49.99" data-price-six-months-usd="269.95" data-price-yearly-usd="449.91"
+                     data-price-monthly-eur="44.99" data-price-six-months-eur="242.95" data-price-yearly-eur="404.91"
+                     data-price-monthly-inr="3749" data-price-six-months-inr="20244" data-price-yearly-inr="33741"
+                     data-price-monthly-yen="5500" data-price-six-months-yen="29700" data-price-yearly-yen="49500">
+                    <h3>Exquisite Plan</h3>
+                    <p class="price">$49.99/month</p>
+                    <button class="signup-btn" data-plan="Exquisite Plan">Sign Up</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Customer Care: 0431 - 890346</p>
+            <p>Visit us at <a href="http://www.popcorn.org.">www.popcorn.org</a></p>
+        </section>
+    </main>
+    <section id="signup" class="signup" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="signup-name">Name:</label>
+            <input type="text" id="signup-name" name="name" required>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required>
+            <label for="signup-card">Payment Method:</label>
+            <div class="radio-group">
+                <input type="radio" id="credit" name="card" value="credit" required>
+                <label for="credit">Credit</label>
+                <input type="radio" id="debit" name="card" value="debit" required>
+                <label for="debit">Debit</label>
+            </div>
+            <label for="signup-age">Age:</label>
+            <input type="number" id="signup-age" name="age" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section id="thank-you" class="thank-you" style="display: none;">
+        <h2>Thank You</h2>
+        <p>Thank you for your subscription, now enjoy the movies!</p>
+        <button id="home-btn">Home</button>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
